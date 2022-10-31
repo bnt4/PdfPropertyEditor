@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.github.taskid.pdfpropertyeditor.EncryptionDialog">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="4" left="12" bottom="12" right="12"/>
+    <constraints>
+      <xy x="20" y="20" width="793" height="527"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="b7c36" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b2425" class="javax.swing.JPasswordField" binding="userPasswordInput">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <echoChar value="•"/>
+              <editable value="true"/>
+            </properties>
+            <clientProperties>
+              <JPasswordField.cutCopyAllowed class="java.lang.Boolean" value="true"/>
+            </clientProperties>
+          </component>
+          <component id="8b41b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="User Password"/>
+            </properties>
+          </component>
+          <component id="15f4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Owner Password"/>
+            </properties>
+          </component>
+          <component id="a19b9" class="javax.swing.JPasswordField" binding="ownerPasswordInput">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <clientProperties>
+              <JPasswordField.cutCopyAllowed class="java.lang.Boolean" value="true"/>
+            </clientProperties>
+          </component>
+          <component id="b234" class="javax.swing.JCheckBox" binding="encryptFileCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Encrypt File"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="3afa5" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Permissions for Users (Owners always have all)"/>
+        <children>
+          <component id="6ee94" class="javax.swing.JCheckBox" binding="canPrintCheckBox">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Print&lt;/b&gt;&lt;br&gt; If the user can print the document. &lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="3c370" class="javax.swing.JCheckBox" binding="canExtractContentCheckBox">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Extract Content&lt;/b&gt;&lt;br&gt;&#10;If the user can extract content from the document.&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="7a1a5" class="javax.swing.JCheckBox" binding="canExtractForAccessibilityCheckBox" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Extract for Accessibility&lt;/b&gt;&lt;br&gt;&#10;If the user can extract content from the document for accessibility purposes.&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="374b" class="javax.swing.JCheckBox" binding="canFillInFormCheckBox">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Fill In Form&lt;/b&gt;&lt;br&gt;&#10;If the user can fill in interactive form fields (including signature fields), even if &quot;Can Modify Annotations&quot; is disabled.&#10;&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="28480" class="javax.swing.JCheckBox" binding="canPrintFaithfulCheckBox">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Print Faithful&lt;/b&gt;&lt;br&gt;&#10;If the user can print the document in a faithful or in a degraded format (if &quot;Can Print&quot; is enabled).&#10;&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="85a8d" class="javax.swing.JCheckBox" binding="canModifyCheckBox">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Modify&lt;/b&gt;&lt;br&gt;&#10;If the user can modify the document.&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="1d889" class="javax.swing.JCheckBox" binding="canModifyAnnotationsCheckBox">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Modify Annotations&lt;/b&gt;&lt;br&gt;&#10;If the user can add or modify text annotations and fill in interactive form fields. Also, if &quot;Can Modify&quot; is enabled, the user will be able to create interactive form fields (including signature fields).&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="637af" class="javax.swing.JCheckBox" binding="canAssembleDocumentCheckBox">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="&lt;html&gt;&lt;b&gt;Can Assemble Document&lt;/b&gt;&lt;br&gt;&#10;If the user can insert/rotate/delete pages.&lt;/html&gt;"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="91658" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d01be" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="&lt;html&gt;When authenticating with the user password, you'll have the permissions specified above.&lt;br&gt; When authenticating with the owner password, you'll have all permissions, regardless of what is set above.&lt;br&gt; If the user password is empty but the owner password isn't, you'll have the permissions specified above when&lt;br&gt;opening the file with a PDF viewer, because you'll be &quot;authenticated&quot; as user, not owner, with no password.&lt;/html&gt;"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
